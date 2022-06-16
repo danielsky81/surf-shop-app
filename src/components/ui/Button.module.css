@@ -1,0 +1,11 @@
+.button {
+  width: fit-content;
+  height: fit-content;
+  align-self: center;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  background-color: blue;
+  color: white;
+  border: 0.25rem solid black;
+  cursor: pointer;
+}
