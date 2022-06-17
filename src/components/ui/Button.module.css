@@ -1,11 +1,21 @@
 .button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   width: fit-content;
   height: fit-content;
   align-self: center;
   text-transform: uppercase;
-  padding: 0.5rem;
-  background-color: blue;
-  color: white;
   border: 0.25rem solid black;
   cursor: pointer;
+  padding: 0;
+}
+
+span {
+  padding: .75rem .5rem;
+}
+
+.badge {
+  color: white;
+  background-color: black;
 }

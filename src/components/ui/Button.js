@@ -4,7 +4,10 @@ import grain from '../style/Grain.module.css';
 
 const Button = () => {
   return (
-    <button className={`${styles.button} ${grain.grain}`}>Cart</button>
+    <button className={`${styles.button} ${grain.grain}`}>
+      <span>Cart</span>
+      <span className={styles.badge}>3</span>
+    </button>
   )
 }
 
