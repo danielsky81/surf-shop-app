@@ -1,13 +1,15 @@
+import React from "react";
+
 import Header from "./components/layout/Header";
-import ProductIntro from './components/Product/ProductIntro';
+import Main from "./components/layout/Main"
 
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
+    <>
       <Header />
-      <ProductIntro />
-    </div>
+      <Main />
+    </>
   );
 }
 

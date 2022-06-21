@@ -1,9 +1,14 @@
+@import './../style/Global.module.css';
+
 .header {
-  /* position: fixed; */
+  position: relative;
   display: flex;
-  width: 100%;
   justify-content: space-between;
   padding: 1rem 2rem;
-  border-bottom: 1rem solid black;
-  /* composes: grain from '../style/Grain.module.css'; */
+  border-bottom: 1px solid var(--greyish);
+}
+
+.header h1 {
+  font-family: var(--teko);
+  transform: translate(-150px, 0px);
 }

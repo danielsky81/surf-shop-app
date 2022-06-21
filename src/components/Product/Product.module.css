@@ -1,0 +1,9 @@
+.products {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.products ul {
+  list-style: none;
+}

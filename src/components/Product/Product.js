@@ -1,3 +1,7 @@
+import React from "react";
+
+import styles from './Product.module.css';
+
 const DUMMY_BOARDS = [
   {
     id: 1,
@@ -39,10 +43,10 @@ const DUMMY_BOARDS = [
 
 const Product = () => {
   
-  const boardList = DUMMY_BOARDS.map(board => <li>{board.name}</li>);
-   
+  const boardList = DUMMY_BOARDS.map(board => <li key={board.id}>{board.name}</li>);
+
   return (
-    <section>
+    <section className={styles.products}>
       <ul>
         {boardList}
       </ul>
