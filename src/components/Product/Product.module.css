@@ -1,9 +1,26 @@
 .products {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem 2rem;
+  padding: 1rem;
 }
 
-.products ul {
-  list-style: none;
+.product {
+  position: relative;
+  border: 1px solid var(--greyish);
+  border-radius: 25px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.product h2 {
+  position: absolute;
+  top: -3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--teko);
+  background-color: white;
+  padding: .5rem 0.5rem;
+  font-size: 1.75rem;
+  width: fit-content;
 }

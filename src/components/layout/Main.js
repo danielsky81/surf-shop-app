@@ -1,13 +1,13 @@
 import React from 'react';
 
 import ProductIntro from '../Product/ProductIntro';
-import Product from '../Product/Product';
+import Products from '../Product/Products';
 
 const Main = () => {
   return (
     <>
       <ProductIntro />
-      <Product />
+      <Products />
     </>
   )
 }
