@@ -1,0 +1,18 @@
+.cart {
+  list-style: none;
+  padding: 0;
+}
+
+.cart-total span:last-child {
+  padding-left: 1rem;
+}
+
+.cart-checkout {
+
+}
+
+.cart-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}

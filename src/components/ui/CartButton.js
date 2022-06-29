@@ -1,10 +1,10 @@
 import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 
-import styles from './Cart.module.css';
+import styles from './CartButton.module.css';
 import global from './../style/Global.module.css';
 
-const Cart = (props) => {
+const CartButton = (props) => {
 
   const btnRef = useRef();
   useEffect(() => {
@@ -19,4 +19,4 @@ const Cart = (props) => {
   )
 }
 
-export default Cart;
+export default CartButton;

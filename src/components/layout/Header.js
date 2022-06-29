@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 
 import styles from './Header.module.css';
 
-import Cart from '../ui/Cart';
+import CartButton from '../ui/CartButton';
 
 const Header = () => {
 
@@ -16,7 +16,7 @@ const Header = () => {
     <>
       <header className={styles.header}>
         <h1 ref={logoRef}>Surf Shop</h1>
-        <Cart name='Cart' />
+        <CartButton name='Cart' />
       </header>
     </>
   )
