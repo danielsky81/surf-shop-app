@@ -9,7 +9,7 @@ const Product = (props) => {
       <h2>{props.name}</h2>
       <p>{props.description}</p>
       <p>€{props.price}</p>
-      <ProductForm />
+      <ProductForm id={props.id}/>
     </div>
   )
 }

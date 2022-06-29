@@ -1,20 +1,13 @@
-import React, { useRef, useEffect } from "react";
-import { gsap } from "gsap";
+import React from "react";
 
 import styles from './Button.module.css';
 import global from './../style/Global.module.css';
 
-const Button = () => {
-
-  const btnRef = useRef();
-  useEffect(() => {
-    gsap.to(btnRef.current, { x: 0, duration: 1 });
-  });
-
+const Button = (props) => {
+ 
   return (
-    <button ref={btnRef} className={`${styles.button} ${global['teko-font']}`}>
-      <span>Cart</span>
-      <span className={styles.badge}>3</span>
+    <button className={`${styles.button} ${global['teko-font']}`}>
+      <span>{props.name}</span>
     </button>
   )
 }
