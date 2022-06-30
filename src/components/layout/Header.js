@@ -5,7 +5,7 @@ import styles from './Header.module.css';
 
 import CartButton from '../ui/CartButton';
 
-const Header = () => {
+const Header = (props) => {
 
   const logoRef = useRef();
   useEffect(() => {
@@ -16,7 +16,7 @@ const Header = () => {
     <>
       <header className={styles.header}>
         <h1 ref={logoRef}>Surf Shop</h1>
-        <CartButton name='Cart' />
+        <CartButton name='Cart' onClick={props.onOpenCart} />
       </header>
     </>
   )

@@ -6,7 +6,7 @@ import global from './../style/Global.module.css';
 const Button = (props) => {
  
   return (
-    <button className={`${styles.button} ${global['teko-font']} ${props.classes}`}>
+    <button className={`${styles.button} ${global['teko-font']} ${props.classes}`} onClick={props.onClick}>
       <span>{props.name}</span>
     </button>
   )
