@@ -31,7 +31,7 @@ const ProductForm = (props) => {
         min: '1',
         max: '99',
         step: '1',
-        defaultvalue: '1'
+        defaultValue: '1'
       }}/>
       <Button name='Add'/>
       {!amountIsValid && <p>Entry not valid</p>}

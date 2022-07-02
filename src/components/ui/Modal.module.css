@@ -18,5 +18,7 @@
   left: 50%;
   transform: translate(-50%, 0);
   height: fit-content;
+  max-height: 80%;
+  overflow: scroll;
   top: 10%;
 }
