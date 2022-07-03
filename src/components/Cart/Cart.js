@@ -13,10 +13,10 @@ const Cart = (props) => {
   const totalAmount = `€${cartCtx.totalAmount}`;
   const hasItems = cartCtx.items.length > 0;
   const cartItemRemovehandler = id => {
-
+    cartCtx.removeItem(id)
   }
   const cartItemAddhandler = item => {
-    
+    cartCtx.addItem({...item, amount: 1});
   }
 
   const cartItems = <div className={styles.cart}>{cartCtx.items.map(item => <CartItem 
